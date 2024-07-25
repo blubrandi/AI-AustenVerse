@@ -9,6 +9,7 @@ const handleCharacterBios = () => {
   let cbRight = document.querySelector('.cb-right');
 
   dropdown.addEventListener('change', (event) => {
+    event.preventDefault();
     let optionSelected = event.target.value;
     let divToShow, divToHide;
 

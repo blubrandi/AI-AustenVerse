@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>P&P Chatbot</title>
+  <title>AI AustenVerse</title>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
@@ -18,10 +18,10 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#">Chat</a>
+          <a class="nav-link" href="/pandp-through-ai-art">P&P Through AI Art</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="/about">About</a>
         </li>
       </ul>
     </div>
@@ -40,7 +40,7 @@
                   AI AustenVerse:  Using AI To Engage With Characters of Our Past
                 </h3> 
                 <p class="text-justify">
-                  Step into the world of Jane Austen with our P&P Chatbot. Using advanced AI technology, we bring the beloved characters of “Pride and Prejudice” to life, allowing you to interact and converse with them as if you were part of their story. Whether you’re seeking advice from Elizabeth Bennet or curious about Mr. Darcy’s thoughts, our chatbot offers a unique and immersive experience. Discover the wit and wisdom of Austen’s characters in a whole new way.          
+                  Step into the world of Jane Austen with AI AustenVerse. Advanced AI technology brings the beloved characters of “Pride and Prejudice” to life, allowing interaction and conversation as if part of their story. Advice can be sought from Elizabeth Bennet, or curiosity about Mr. Darcy’s thoughts can be satisfied, offering a unique and immersive experience. The wit and wisdom of Austen’s characters are discovered in a whole new way.         
                 </p>
               </div>
               </div>
@@ -53,7 +53,8 @@
             <div class="top">
 
               <div id="home-image">
-                <img src="assets/panap.webp" alt="Pride and Prejudice Hero Image" class="ai-austen-img img-fluid">            
+                <!-- <img src="assets/panap.webp" alt="Pride and Prejudice Hero Image" class="ai-austen-img img-fluid"> -->
+                
               </div>
               <div class="d-flex" id="character-bios">
                 <div class="cb-left"></div>
@@ -62,6 +63,7 @@
 
             </div>
             <div class="bottom">
+              <p class="mb-6" style="font-size: 1.2rem;">Chat with one of the characters from Jane Austen's <em>Pride & Prejudice</em>.</p>
               <div class="form-group">
                 <label for="character">With whom would you like to converse?</label>
                 <select class="form-control" id="character" required>
@@ -83,10 +85,10 @@
                 </select>
               </div>
               <div class="form-group">
-                <label for="username">What shall I call you?</label>
+                <label for="username">What shall you be called?</label>
                 <input type="text" class="form-control" id="username" placeholder="Enter your name">
               </div>
-              <button class="btn btn-primary" onclick="startChat()">Start Chat</button>
+              <button class="btn btn-secondary" onclick="startChat()">Start Chat</button>
               
             </div>
           </div>
@@ -101,7 +103,7 @@
 
           <div class="chat-input-container">
             <input type="text" id="userInput" class="form-control" placeholder="Ask something..." >
-            <button class="btn btn-outline-secondary ml-2" onclick="sendMessage()">Send</button>
+            <button class="btn btn-secondary ml-2" onclick="sendMessage()">Send</button>
             <button class="btn btn-outline-secondary ml-2" id="exitChat">Exit</button>
           </div>
 

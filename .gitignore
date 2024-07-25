@@ -17,3 +17,6 @@ Thumbs.db
 
 # Netlify
 netlify.toml
+
+# Local Netlify folder
+.netlify
