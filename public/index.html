@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P&P Chatbot</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/">AI AustenVerse</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Chat</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row flex-grow-1">
+      <!-- Left Column -->
+      <div class="col-md-6 hero mt-20">
+        <div class="left-flex-cont">
+          <div class="top">
+            <img class="logo-inline" src="assets/ai_austenverse_logo_tslighter.png" alt="AI AustenVerse" />
+          </div>
+          <div class="bottom">
+                <h3 class="text-center">
+                  AI AustenVerse:  Using AI To Engage With Characters of Our Past
+                </h3> 
+                <p class="text-justify">
+                  Step into the world of Jane Austen with our P&P Chatbot. Using advanced AI technology, we bring the beloved characters of “Pride and Prejudice” to life, allowing you to interact and converse with them as if you were part of their story. Whether you’re seeking advice from Elizabeth Bennet or curious about Mr. Darcy’s thoughts, our chatbot offers a unique and immersive experience. Discover the wit and wisdom of Austen’s characters in a whole new way.          
+                </p>
+              </div>
+              </div>
+      </div>
+      <!-- Right Column -->
+      <div class="col-md-6 right-column">
+        <!-- <img class="logo-inline" src="assets/ai_austenverse_logo_tslighter.png" alt="AI AustenVerse" /> -->
+        <div class="setup-screen" id="setup-screen">
+          <div class="right-flex-cont">
+            <div class="top">
+
+              <div id="home-image">
+                <img src="assets/panap.webp" alt="Pride and Prejudice Hero Image" class="ai-austen-img img-fluid">            
+              </div>
+              <div class="d-flex" id="character-bios">
+                <div class="cb-left"></div>
+                <div class="cb-right d-flex flex-column justify-content-center"></div>
+              </div>
+
+            </div>
+            <div class="bottom">
+              <div class="form-group">
+                <label for="character">With whom would you like to converse?</label>
+                <select class="form-control" id="character" required>
+                  <option selected disabled>Click to Select</option>
+                  <option>Elizabeth (Lizzy) Bennet</option>
+                  <option>Fitzwilliam Darcy</option>
+                  <option>Charles Bingley</option>
+                  <option>Jane Bennet</option>
+                  <option>Mr. Bennet</option>
+                  <option>Mrs. Bennet</option>
+                  <option>Lydia Bennet</option>
+                  <option>Caroline Bingley</option>
+                  <option>George Wickham</option>
+                  <option>William Collins</option>
+                  <option>Charlotte Lucas</option>
+                  <option>Edward Gardiner</option>
+                  <option>Mrs. Gardiner</option>
+                  <option>Mrs. Reynolds</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="username">What shall I call you?</label>
+                <input type="text" class="form-control" id="username" placeholder="Enter your name">
+              </div>
+              <button class="btn btn-primary" onclick="startChat()">Start Chat</button>
+              
+            </div>
+          </div>
+        </div>
+        <div class="chatbot-space" id="chatbot-space">
+          <div id="chat-history"></div>
+          <!-- <div id="chat-input-container">
+            <input type="text" id="userInput" class="form-control" placeholder="Ask something...">
+            <button class="btn btn-primary ml-2" onclick="sendMessage()">Send</button>
+            <button class="btn btn-secondary ml-2" id="exitChat">Exit Chat</button>
+          </div> -->
+
+          <div class="chat-input-container">
+            <input type="text" id="userInput" class="form-control" placeholder="Ask something..." >
+            <button class="btn btn-outline-secondary ml-2" onclick="sendMessage()">Send</button>
+            <button class="btn btn-outline-secondary ml-2" id="exitChat">Exit</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
