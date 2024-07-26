@@ -283,6 +283,37 @@ function changeCharacter() {
   document.getElementById('chat-history').innerHTML = '';
 }
 
+// function startChat() {
+//   const character = document.getElementById('character').value;
+//   username = document.getElementById('username').value;
+
+//   if (!username) {
+//     alert('Please enter your name.');
+//     return;
+//   }
+
+//   if (character == 'Click to Select') {
+//     alert('Please select a character')
+//     return
+//   }
+
+//   chatHistoryKey = 'chatHistory_' + character;
+
+//   // Hide the setup screen and show the chat screen
+//   document.getElementById('setup-screen').style.display = 'none';
+//   document.getElementById('chatbot-space').style.display = 'flex';
+
+//   // Add a greeting message from the character
+//   const characterMessageDiv = document.createElement('div');
+//   characterMessageDiv.classList.add('chat-message', 'character');
+//   characterMessageDiv.innerHTML = `<div class="message-caption">${character}:</div><div>${`Hello ${username}, I am ${character}. To what do I owe thy honor?`}</div>`;
+//   document.getElementById('chat-history').appendChild(characterMessageDiv);
+//   saveChatHistory();
+//   scrollToBottom();
+// }
+
+// Add this to your script.js
+
 function startChat() {
   const character = document.getElementById('character').value;
   username = document.getElementById('username').value;
@@ -292,9 +323,9 @@ function startChat() {
     return;
   }
 
-  if (character == 'Click to Select') {
-    alert('Please select a character')
-    return
+  if (character === 'Click to Select') {
+    alert('Please select a character');
+    return;
   }
 
   chatHistoryKey = 'chatHistory_' + character;
@@ -358,6 +389,21 @@ async function sendMessage() {
 
   document.getElementById('userInput').value = '';
 }
+
+// function exitChat() {
+//   // Clear chat history
+//   if (chatHistoryKey) {
+//     localStorage.removeItem(chatHistoryKey);
+//   }
+//   document.getElementById('chat-history').innerHTML = '';
+
+//   // Hide the chat screen and show the setup screen
+//   document.getElementById('setup-screen').style.display = 'flex';
+//   document.getElementById('chatbot-space').style.display = 'none';
+// }
+
+// document.addEventListener('DOMContentLoaded', loadChatHistory);
+// document.addEventListener('DOMContentLoaded', handleCharacterBios);
 
 function exitChat() {
   // Clear chat history

@@ -18,7 +18,7 @@
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" href="/pandp-through-ai-art">P&P Through AI Art</a>
+          <a class="nav-link" href="/pandp-by-gpt">P&P by GPT</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="/about">About</a>
@@ -36,31 +36,25 @@
             <img class="logo-inline" src="assets/ai_austenverse_logo_tslighter.png" alt="AI AustenVerse" />
           </div>
           <div class="bottom">
-                <h3 class="text-center">
-                  AI AustenVerse:  Using AI To Engage With Characters of Our Past
-                </h3> 
-                <p class="text-justify">
-                  Step into the world of Jane Austen with AI AustenVerse. Advanced AI technology brings the beloved characters of “Pride and Prejudice” to life, allowing interaction and conversation as if part of their story. Advice can be sought from Elizabeth Bennet, or curiosity about Mr. Darcy’s thoughts can be satisfied, offering a unique and immersive experience. The wit and wisdom of Austen’s characters are discovered in a whole new way.         
-                </p>
-              </div>
-              </div>
+            <h3 class="text-center">
+              AI AustenVerse: Using AI To Engage With Characters of Our Past
+            </h3>
+            <p class="text-justify">
+              Step into the world of Jane Austen with AI AustenVerse. Advanced AI technology brings the beloved characters of “Pride and Prejudice” to life, allowing interaction and conversation as if part of their story. Advice can be sought from Elizabeth Bennet, or curiosity about Mr. Darcy’s thoughts can be satisfied, offering a unique and immersive experience. The wit and wisdom of Austen’s characters are discovered in a whole new way.
+            </p>
+          </div>
+        </div>
       </div>
       <!-- Right Column -->
       <div class="col-md-6 right-column">
-        <!-- <img class="logo-inline" src="assets/ai_austenverse_logo_tslighter.png" alt="AI AustenVerse" /> -->
         <div class="setup-screen" id="setup-screen">
           <div class="right-flex-cont">
             <div class="top">
-
-              <div id="home-image">
-                <!-- <img src="assets/panap.webp" alt="Pride and Prejudice Hero Image" class="ai-austen-img img-fluid"> -->
-                
-              </div>
+              <div id="home-image"></div>
               <div class="d-flex" id="character-bios">
                 <div class="cb-left"></div>
                 <div class="cb-right d-flex flex-column justify-content-center"></div>
               </div>
-
             </div>
             <div class="bottom">
               <p class="mb-6" style="font-size: 1.2rem;">Chat with one of the characters from Jane Austen's <em>Pride & Prejudice</em>.</p>
@@ -89,24 +83,16 @@
                 <input type="text" class="form-control" id="username" placeholder="Enter your name">
               </div>
               <button class="btn btn-secondary" onclick="startChat()">Start Chat</button>
-              
             </div>
           </div>
         </div>
-        <div class="chatbot-space" id="chatbot-space">
+        <div class="chatbot-space" id="chatbot-space" style="display: none;">
           <div id="chat-history"></div>
-          <!-- <div id="chat-input-container">
-            <input type="text" id="userInput" class="form-control" placeholder="Ask something...">
-            <button class="btn btn-primary ml-2" onclick="sendMessage()">Send</button>
-            <button class="btn btn-secondary ml-2" id="exitChat">Exit Chat</button>
-          </div> -->
-
           <div class="chat-input-container">
-            <input type="text" id="userInput" class="form-control" placeholder="Ask something..." >
+            <input type="text" id="userInput" class="form-control" placeholder="Ask something...">
             <button class="btn btn-secondary ml-2" onclick="sendMessage()">Send</button>
-            <button class="btn btn-outline-secondary ml-2" id="exitChat">Exit</button>
+            <button class="btn btn-outline-secondary ml-2" id="exitChat" onclick="exitChat()">Exit</button>
           </div>
-
         </div>
       </div>
     </div>
