@@ -310,3 +310,30 @@ box-shadow: 0px 9px 5px -7px rgba(0,0,0,0.31);
     #chat-history {
         overflow-y: scroll;
     }
+
+    /* Default link color */
+a {
+    color: #4e6f90; /* You can change this to your desired color */
+  }
+  
+  /* Link hover color */
+  a:hover {
+    color: rgb(126, 179, 234); /* You can change this to your desired hover color */
+    text-decoration: none; /* This removes the underline on hover */
+  }
+  
+  /* Visited link color */
+  a:visited {
+    color: #4e6f90; /* You can change this to your desired visited link color */
+  }
+  
+  /* Active link color */
+  a:active {
+    color: #4e6f90; /* You can change this to your desired active link color */
+  }
+  
+  /* Focused link color */
+  a:focus {
+    color: #343a40; /* You can change this to your desired focus color */
+    outline: none; /* This removes the outline on focus */
+  }
