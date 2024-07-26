@@ -306,7 +306,7 @@ function startChat() {
   // Add a greeting message from the character
   const characterMessageDiv = document.createElement('div');
   characterMessageDiv.classList.add('chat-message', 'character');
-  characterMessageDiv.innerHTML = `<div class="message-caption">${character}:</div><div>${`Hello ${username}, I am ${character}. How may I assist you today?`}</div>`;
+  characterMessageDiv.innerHTML = `<div class="message-caption">${character}:</div><div>${`Hello ${username}, I am ${character}. To what do I owe thy honor?`}</div>`;
   document.getElementById('chat-history').appendChild(characterMessageDiv);
   saveChatHistory();
   scrollToBottom();

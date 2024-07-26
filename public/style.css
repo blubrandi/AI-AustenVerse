@@ -270,3 +270,39 @@ box-shadow: 0px 9px 5px -7px rgba(0,0,0,0.31);
     .small-text {
         font-size: 0.8rem;
     }
+
+    .carousel-item {
+        display: flex;
+        height: 100vh; /* Ensure the carousel items take full viewport height */
+    }
+    
+    .image-container {
+        flex: 1;
+        background-color: #aaa;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .image-container img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+    
+    .text-container {
+        flex: 1;
+        background-color: #343a40;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+    
+    .carousel-caption h5, .carousel-caption p {
+        margin: 0;
+        padding: 5px;
+    }

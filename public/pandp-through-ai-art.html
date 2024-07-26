@@ -7,24 +7,519 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
   <link href="style.css" rel="stylesheet">
+  <style>
+        /* body {
+            background-color: #f8f9fa;
+        } */
+
+        .container {
+          margin-top: 40px;
+        }
+        .card {
+            margin-bottom: 20px;
+            background-color: #413f3d;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        .card-title {
+            color: #F5E5C0;
+        }
+        .card-text {
+            color: #F5E5C0;
+        }
+        /* .card-body {
+            background-color: #aaa;
+        } */
+        .modal-dialog {
+    max-width: 90%;
+    margin: 1.75rem auto;
+}
+
+.modal-content {
+    max-height: 90vh;
+    overflow: hidden;
+    background: #222;
+}
+
+.modal-body {
+    max-height: calc(90vh - 120px); /* Adjust based on the height of the modal header and footer */
+    overflow-y: auto;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-body p {
+  width: 300px;
+  margin-left: 20px;
+  font-size: 1.6rem;
+}
+
+.modal-body img {
+    max-width: 420px;
+    /* max-height: 100%;  */
+    object-fit:contain;
+}
+</style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="/">AI AustenVerse</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="/pandp-through-ai-art">P&P Through AI Art</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/about">About</a>
-            </li>
-          </ul>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/">AI AustenVerse</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/pandp-through-ai-art">P&P Through AI Art</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- <div class="container"> -->
+    <div class="container">
+      <div class="row">
+          <!-- First Card -->
+          <div class="col-md-4">
+              <div class="card" data-toggle="modal" data-target="#modal1">
+                  <img src="/assets/ai-story/01.webp" class="card-img-top" alt="Introduction of the Bennet Family">
+                  <div class="card-body">
+                      <h5 class="card-title">Introduction of the Bennet Family</h5>
+                      <p class="card-text">The introduction of the Bennet family sets the stage for the social dynamics and the pressures of marrying off the five Bennet daughters.</p>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Modal 1 -->
+          <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modalLabel1" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="modalLabel1">Introduction of the Bennet Family</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <img src="/assets/ai-story/01.webp" class="img-fluid" alt="Introduction of the Bennet Family">
+                          <p class="mt-3">The introduction of the Bennet family sets the stage for the social dynamics and the pressures of marrying off the five Bennet daughters.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Second Card -->
+          <div class="col-md-4">
+              <div class="card" data-toggle="modal" data-target="#modal2">
+                  <img src="/assets/ai-story/02.webp" class="card-img-top" alt="Arrival of Mr. Bingley">
+                  <div class="card-body">
+                      <h5 class="card-title">Arrival of Mr. Bingley</h5>
+                      <p class="card-text">Mr. Bingley's arrival brings excitement and hope to the Bennet family, particularly for Jane Bennet.</p>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Modal 2 -->
+          <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modalLabel2" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="modalLabel2">Arrival of Mr. Bingley</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <img src="/assets/ai-story/02.webp" class="img-fluid" alt="Arrival of Mr. Bingley">
+                          <p class="mt-3">Mr. Bingley's arrival brings excitement and hope to the Bennet family, particularly for Jane Bennet.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Third Card -->
+          <div class="col-md-4">
+              <div class="card" data-toggle="modal" data-target="#modal3">
+                  <img src="/assets/ai-story/03.webp" class="card-img-top" alt="Netherfield Ball">
+                  <div class="card-body">
+                      <h5 class="card-title">Netherfield Ball</h5>
+                      <p class="card-text">The Netherfield Ball is a key social event where characters interact and relationships develop, particularly between Elizabeth Bennet and Mr. Darcy.</p>
+                  </div>
+              </div>
+          </div>
+  
+          <!-- Modal 3 -->
+          <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modalLabel3" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title" id="modalLabel3">Netherfield Ball</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                          </button>
+                      </div>
+                      <div class="modal-body">
+                          <img src="/assets/ai-story/03.webp" class="img-fluid" alt="Netherfield Ball">
+                          <p class="mt-3">The Netherfield Ball is a key social event where characters interact and relationships develop, particularly between Elizabeth Bennet and Mr. Darcy.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+  
+
+      </div>
+
+      <div class="row">
+                  <!-- Fourth Card -->
+                  <div class="col-md-4">
+                    <div class="card" data-toggle="modal" data-target="#modal4">
+                        <img src="/assets/ai-story/04.webp" class="card-img-top" alt="Jane’s Illness">
+                        <div class="card-body">
+                            <h5 class="card-title">Jane’s Illness</h5>
+                            <p class="card-text">Jane Bennet's illness while visiting the Bingleys provides an opportunity for Elizabeth to stay at Netherfield and interact more with Mr. Darcy.</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Modal 4 -->
+                <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modalLabel4" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="modalLabel4">Jane’s Illness</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <img src="/assets/ai-story/04.webp" class="img-fluid" alt="Jane’s Illness">
+                                <p class="mt-3">Jane Bennet's illness while visiting the Bingleys provides an opportunity for Elizabeth to stay at Netherfield and interact more with Mr. Darcy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        <!-- Fifth Card -->
+        <div class="col-md-4">
+            <div class="card" data-toggle="modal" data-target="#modal5">
+                <img src="/assets/ai-story/05.webp" class="card-img-top" alt="Mr. Collins’ Proposal">
+                <div class="card-body">
+                    <h5 class="card-title">Mr. Collins’ Proposal</h5>
+                    <p class="card-text">Mr. Collins' proposal to Elizabeth Bennet highlights the pressures of marriage and Elizabeth's desire for personal happiness over social expectations.</p>
+                </div>
+            </div>
         </div>
-      </nav>
     
+        <!-- Modal 5 -->
+        <div class="modal fade" id="modal5" tabindex="-1" aria-labelledby="modalLabel5" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel5">Mr. Collins’ Proposal</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/assets/ai-story/05.webp" class="img-fluid" alt="Mr. Collins’ Proposal">
+                        <p class="mt-3">Mr. Collins' proposal to Elizabeth Bennet highlights the pressures of marriage and Elizabeth's desire for personal happiness over social expectations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Sixth Card -->
+        <div class="col-md-4">
+            <div class="card" data-toggle="modal" data-target="#modal6">
+                <img src="/assets/ai-story/06.webp" class="card-img-top" alt="Elizabeth's Rejection of Mr. Collins">
+                <div class="card-body">
+                    <h5 class="card-title">Elizabeth's Rejection of Mr. Collins</h5>
+                    <p class="card-text">Elizabeth's rejection of Mr. Collins' proposal showcases her independence and desire for a marriage based on love.</p>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Modal 6 -->
+        <div class="modal fade" id="modal6" tabindex="-1" aria-labelledby="modalLabel6" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalLabel6">Elizabeth's Rejection of Mr. Collins</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img src="/assets/ai-story/06.webp" class="img-fluid" alt="Elizabeth's Rejection of Mr. Collins">
+                        <p class="mt-3">Elizabeth's rejection of Mr. Collins' proposal showcases her independence and desire for a marriage based on love.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+
+    </div>
+
+    <div class="row">
+              <!-- Seventh Card -->
+              <div class="col-md-4">
+                <div class="card" data-toggle="modal" data-target="#modal7">
+                    <img src="/assets/ai-story/07.webp" class="card-img-top" alt="Mr. Wickham's Arrival">
+                    <div class="card-body">
+                        <h5 class="card-title">Mr. Wickham's Arrival</h5>
+                        <p class="card-text">Mr. Wickham's arrival and his interactions with Elizabeth reveal more about Mr. Darcy's character.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modal 7 -->
+            <div class="modal fade" id="modal7" tabindex="-1" aria-labelledby="modalLabel7" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLabel7">Mr. Wickham's Arrival</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/assets/ai-story/07.webp" class="img-fluid" alt="Mr. Wickham's Arrival">
+                            <p class="mt-3">Mr. Wickham's arrival and his interactions with Elizabeth reveal more about Mr. Darcy's character.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Eighth Card -->
+            <div class="col-md-4">
+                <div class="card" data-toggle="modal" data-target="#modal8">
+                    <img src="/assets/ai-story/08.webp" class="card-img-top" alt="Visit to Rosings Park">
+                    <div class="card-body">
+                        <h5 class="card-title">Visit to Rosings Park</h5>
+                        <p class="card-text">Elizabeth's visit to Rosings Park and her interactions with Lady Catherine de Bourgh add tension and further develop her character.</p>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Modal 8 -->
+            <div class="modal fade" id="modal8" tabindex="-1" aria-labelledby="modalLabel8" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="modalLabel8">Visit to Rosings Park</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="/assets/ai-story/08.webp" class="img-fluid" alt="Visit to Rosings Park">
+                            <p class="mt-3">Elizabeth's visit to Rosings Park and her interactions with Lady Catherine de Bourgh add tension and further develop her character.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+      <!-- Ninth Card -->
+      <div class="col-md-4">
+          <div class="card" data-toggle="modal" data-target="#modal9">
+              <img src="/assets/ai-story/09.webp" class="card-img-top" alt="Mr. Darcy's First Proposal">
+              <div class="card-body">
+                  <h5 class="card-title">Mr. Darcy's First Proposal</h5>
+                  <p class="card-text">Mr. Darcy's first proposal to Elizabeth and her rejection of him mark a turning point in their relationship.</p>
+              </div>
+          </div>
+      </div>
+  
+      <!-- Modal 9 -->
+      <div class="modal fade" id="modal9" tabindex="-1" aria-labelledby="modalLabel9" aria-hidden="true">
+          <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="modal-title" id="modalLabel9">Mr. Darcy's First Proposal</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                      </button>
+                  </div>
+                  <div class="modal-body">
+                      <img src="/assets/ai-story/09.webp" class="img-fluid" alt="Mr. Darcy's First Proposal">
+                      <p class="mt-3">Mr. Darcy's first proposal to Elizabeth and her rejection of him mark a turning point in their relationship.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  
+     
+  </div>
+
+  <div class="row">
+     <!-- Tenth Card -->
+     <div class="col-md-4">
+      <div class="card" data-toggle="modal" data-target="#modal10">
+          <img src="/assets/ai-story/10.webp" class="card-img-top" alt="Visit to Pemberley">
+          <div class="card-body">
+              <h5 class="card-title">Visit to Pemberley</h5>
+              <p class="card-text">Elizabeth's visit to Pemberley and her growing admiration for Mr. Darcy change her feelings towards him.</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal 10 -->
+  <div class="modal fade" id="modal10" tabindex="-1" aria-labelledby="modalLabel10" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabel10">Visit to Pemberley</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <img src="/assets/ai-story/10.webp" class="img-fluid" alt="Visit to Pemberley">
+                  <p class="mt-3">Elizabeth's visit to Pemberley and her growing admiration for Mr. Darcy change her feelings towards him.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Eleventh Card -->
+  <div class="col-md-4">
+      <div class="card" data-toggle="modal" data-target="#modal11">
+          <img src="/assets/ai-story/11.webp" class="card-img-top" alt="Lydia's Elopement">
+          <div class="card-body">
+              <h5 class="card-title">Lydia's Elopement</h5>
+              <p class="card-text">Lydia's elopement with Mr. Wickham causes a scandal and threatens the Bennet family's reputation.</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal 11 -->
+  <div class="modal fade" id="modal11" tabindex="-1" aria-labelledby="modalLabel11" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabel11">Lydia's Elopement</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <img src="/assets/ai-story/11.webp" class="img-fluid" alt="Lydia's Elopement">
+                  <p class="mt-3">Lydia's elopement with Mr. Wickham causes a scandal and threatens the Bennet family's reputation.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Twelfth Card -->
+  <div class="col-md-4">
+      <div class="card" data-toggle="modal" data-target="#modal12">
+          <img src="/assets/ai-story/12.webp" class="card-img-top" alt="Mr. Darcy's Intervention">
+          <div class="card-body">
+              <h5 class="card-title">Mr. Darcy's Intervention</h5>
+              <p class="card-text">Mr. Darcy's intervention to resolve the situation with Lydia and Mr. Wickham demonstrates his love and commitment to Elizabeth.</p>
+          </div>
+      </div>
+  </div>
+
+  <!-- Modal 12 -->
+  <div class="modal fade" id="modal12" tabindex="-1" aria-labelledby="modalLabel12" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="modalLabel12">Mr. Darcy's Intervention</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                  </button>
+              </div>
+              <div class="modal-body">
+                  <img src="/assets/ai-story/12.webp" class="img-fluid" alt="Mr. Darcy's Intervention">
+                  <p class="mt-3">Mr. Darcy's intervention to resolve the situation with Lydia and Mr. Wickham demonstrates his love and commitment to Elizabeth.</p>
+              </div>
+          </div>
+      </div>
+  </div>
+<div class="row">
+      <!-- Thirteenth Card -->
+      <div class="col-md-4">
+        <div class="card" data-toggle="modal" data-target="#modal13">
+            <img src="/assets/ai-story/13.webp" class="card-img-top" alt="Lady Catherine's Visit">
+            <div class="card-body">
+                <h5 class="card-title">Lady Catherine's Visit</h5>
+                <p class="card-text">Lady Catherine's visit to Elizabeth and her attempt to prevent her marriage to Mr. Darcy highlight the social pressures and conflicts.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 13 -->
+    <div class="modal fade" id="modal13" tabindex="-1" aria-labelledby="modalLabel13" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel13">Lady Catherine's Visit</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="/assets/ai-story/13.webp" class="img-fluid" alt="Lady Catherine's Visit">
+                    <p class="mt-3">Lady Catherine's visit to Elizabeth and her attempt to prevent her marriage to Mr. Darcy highlight the social pressures and conflicts.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Fourteenth Card -->
+    <div class="col-md-4">
+        <div class="card" data-toggle="modal" data-target="#modal14">
+            <img src="/assets/ai-story/14.webp" class="card-img-top" alt="Elizabeth and Mr. Darcy's Marriage">
+            <div class="card-body">
+                <h5 class="card-title">Elizabeth and Mr. Darcy's Marriage</h5>
+                <p class="card-text">Elizabeth and Mr. Darcy's eventual marriage represents the triumph of love and mutual respect over societal expectations and misunderstandings.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 14 -->
+    <div class="modal fade" id="modal14" tabindex="-1" aria-labelledby="modalLabel14" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLabel14">Elizabeth and Mr. Darcy's Marriage</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="/assets/ai-story/14.webp" class="img-fluid" alt="Elizabeth and Mr. Darcy's Marriage">
+                    <p class="mt-3">Elizabeth and Mr. Darcy's eventual marriage represents the triumph of love and mutual respect over societal expectations and misunderstandings.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
